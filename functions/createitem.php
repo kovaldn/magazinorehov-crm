@@ -16,7 +16,7 @@
 		$profit = $priceSale - $priceOriginal;
 
 
-		$query = "INSERT INTO `assortment` (`product_alias`, `product_name`, `price_original`, `perice_sale`, `profit`) VALUES ( `$productAlias`, `$name`, $priceOriginal, $priceSale, $profit)";
+		$query = "INSERT INTO `assortment`(`product_alias`, `product_name`, `price_original`, `price_sale`, `profit`) VALUES ( '$productAlias', '$name', $priceOriginal, $priceSale, $profit)";
 		$queryParams->debug = TRUE;
 		MysqlQuery( $query, $queryParams );
 
