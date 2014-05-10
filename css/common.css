@@ -1,0 +1,19 @@
+h1{ margin: 40px 0;}
+h4{ margin: 30px 0;}
+
+.main-wrapper{ margin: 10px auto;}
+
+.highlight {
+	padding: 9px 14px;
+	margin-bottom: 14px;
+	border: 1px solid #e1e1e8;
+	border-radius: 4px;
+}
+
+.nav{
+	margin-bottom: 20px;
+}
+
+.dataTables_wrapper{
+	margin: 10px;
+}

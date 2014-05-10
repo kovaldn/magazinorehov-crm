@@ -17,7 +17,7 @@
 
 
 		$query = "INSERT INTO `assortment`(`product_alias`, `product_name`, `price_original`, `price_sale`, `profit`) VALUES ( '$productAlias', '$name', $priceOriginal, $priceSale, $profit)";
-		$queryParams->debug = TRUE;
+		// $queryParams->debug = TRUE;
 		MysqlQuery( $query, $queryParams );
 
 	}
