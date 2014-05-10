@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Хост: 127.0.0.1
--- Время создания: Май 04 2014 г., 22:56
+-- Время создания: Май 10 2014 г., 15:51
 -- Версия сервера: 5.5.25
 -- Версия PHP: 5.3.13
 
@@ -31,23 +31,22 @@ CREATE TABLE IF NOT EXISTS `assortment` (
   `product_alias` varchar(255) NOT NULL,
   `product_name` varchar(255) NOT NULL,
   `price_original` decimal(10,2) NOT NULL,
-  `perice_sale` decimal(10,2) NOT NULL,
+  `price_sale` decimal(10,2) NOT NULL,
   `profit` decimal(10,2) NOT NULL,
   PRIMARY KEY (`id`),
   UNIQUE KEY `product_id_UNIQUE` (`id`),
   UNIQUE KEY `alias_UNIQUE` (`product_alias`),
   UNIQUE KEY `product_name_UNIQUE` (`product_name`)
-) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=5 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=12 ;
 
 --
 -- Дамп данных таблицы `assortment`
 --
 
-INSERT INTO `assortment` (`id`, `product_alias`, `product_name`, `price_original`, `perice_sale`, `profit`) VALUES
+INSERT INTO `assortment` (`id`, `product_alias`, `product_name`, `price_original`, `price_sale`, `profit`) VALUES
 (1, 'pekan', 'пекан', '1000.00', '1500.00', '500.00'),
 (2, 'keshu', 'кешью', '300.00', '600.00', '300.00'),
-(3, 'greckiy', 'грецкий', '400.00', '500.00', '100.00'),
-(4, 'dmitriy', 'дмитрий', '123.00', '2344.00', '2221.00');
+(3, 'greckiy', 'грецкий', '400.00', '500.00', '100.00');
 
 -- --------------------------------------------------------
 
